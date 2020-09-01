@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2B979D2004847137497578 /* Pods_SwiftUI_InAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EE45012EE877A872D2E6C1 /* Pods_SwiftUI_InAppPurchase.framework */; };
 		F17E704924FD47120017710A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E704824FD47120017710A /* AppDelegate.swift */; };
 		F17E704B24FD47120017710A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E704A24FD47120017710A /* SceneDelegate.swift */; };
 		F17E704E24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F17E704C24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld */; };
@@ -14,9 +15,14 @@
 		F17E705224FD47170017710A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17E705124FD47170017710A /* Assets.xcassets */; };
 		F17E705524FD47170017710A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17E705424FD47170017710A /* Preview Assets.xcassets */; };
 		F17E705824FD47170017710A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E705624FD47170017710A /* LaunchScreen.storyboard */; };
+		F17E706324FD58DD0017710A /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E706224FD58DD0017710A /* Banner.swift */; };
+		F1851EFA24FE9A250000FD10 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1851EF924FE9A250000FD10 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62EE45012EE877A872D2E6C1 /* Pods_SwiftUI_InAppPurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_InAppPurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96A9EAD2685CC8642CBF0AC6 /* Pods-SwiftUI-InAppPurchase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-InAppPurchase.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase.debug.xcconfig"; sourceTree = "<group>"; };
+		ADDFE183C1EDBD4A02AEFEDA /* Pods-SwiftUI-InAppPurchase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-InAppPurchase.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase.release.xcconfig"; sourceTree = "<group>"; };
 		F17E704524FD47110017710A /* SwiftUI-InAppPurchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-InAppPurchase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17E704824FD47120017710A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F17E704A24FD47120017710A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		F17E705424FD47170017710A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F17E705724FD47170017710A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F17E705924FD47170017710A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17E706224FD58DD0017710A /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		F1851EF924FE9A250000FD10 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2B979D2004847137497578 /* Pods_SwiftUI_InAppPurchase.framework in Frameworks */,
+				F1851EFA24FE9A250000FD10 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A4FFCC718137EC8C2A30C00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96A9EAD2685CC8642CBF0AC6 /* Pods-SwiftUI-InAppPurchase.debug.xcconfig */,
+				ADDFE183C1EDBD4A02AEFEDA /* Pods-SwiftUI-InAppPurchase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F17E703C24FD47110017710A = {
 			isa = PBXGroup;
 			children = (
 				F17E704724FD47110017710A /* SwiftUI-InAppPurchase */,
 				F17E704624FD47110017710A /* Products */,
+				F17E705F24FD47790017710A /* Frameworks */,
+				2A4FFCC718137EC8C2A30C00 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +87,7 @@
 				F17E705924FD47170017710A /* Info.plist */,
 				F17E704C24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld */,
 				F17E705324FD47170017710A /* Preview Content */,
+				F17E706224FD58DD0017710A /* Banner.swift */,
 			);
 			path = "SwiftUI-InAppPurchase";
 			sourceTree = "<group>";
@@ -78,6 +100,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F17E705F24FD47790017710A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1851EF924FE9A250000FD10 /* StoreKit.framework */,
+				62EE45012EE877A872D2E6C1 /* Pods_SwiftUI_InAppPurchase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F17E705C24FD47170017710A /* Build configuration list for PBXNativeTarget "SwiftUI-InAppPurchase" */;
 			buildPhases = (
+				B0239FB1D25FF7A8C5BD4463 /* [CP] Check Pods Manifest.lock */,
 				F17E704124FD47110017710A /* Sources */,
 				F17E704224FD47110017710A /* Frameworks */,
 				F17E704324FD47110017710A /* Resources */,
+				E4FBA9F8C32035C021B67AA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +177,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B0239FB1D25FF7A8C5BD4463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-InAppPurchase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4FBA9F8C32035C021B67AA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F17E704124FD47110017710A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +226,7 @@
 			files = (
 				F17E704E24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld in Sources */,
 				F17E704924FD47120017710A /* AppDelegate.swift in Sources */,
+				F17E706324FD58DD0017710A /* Banner.swift in Sources */,
 				F17E705024FD47120017710A /* ContentView.swift in Sources */,
 				F17E704B24FD47120017710A /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +362,7 @@
 		};
 		F17E705D24FD47170017710A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A9EAD2685CC8642CBF0AC6 /* Pods-SwiftUI-InAppPurchase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +383,7 @@
 		};
 		F17E705E24FD47170017710A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADDFE183C1EDBD4A02AEFEDA /* Pods-SwiftUI-InAppPurchase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
