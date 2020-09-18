@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B2B979D2004847137497578 /* Pods_SwiftUI_InAppPurchase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EE45012EE877A872D2E6C1 /* Pods_SwiftUI_InAppPurchase.framework */; };
+		F13841E22513DF1200088AE6 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13841E12513DF1200088AE6 /* BuyView.swift */; };
+		F160B2B9251260CB0040FEE5 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F160B2B8251260CB0040FEE5 /* IAPManager.swift */; };
 		F17E704924FD47120017710A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E704824FD47120017710A /* AppDelegate.swift */; };
 		F17E704B24FD47120017710A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E704A24FD47120017710A /* SceneDelegate.swift */; };
 		F17E704E24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F17E704C24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld */; };
@@ -23,6 +25,8 @@
 		62EE45012EE877A872D2E6C1 /* Pods_SwiftUI_InAppPurchase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_InAppPurchase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A9EAD2685CC8642CBF0AC6 /* Pods-SwiftUI-InAppPurchase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-InAppPurchase.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase.debug.xcconfig"; sourceTree = "<group>"; };
 		ADDFE183C1EDBD4A02AEFEDA /* Pods-SwiftUI-InAppPurchase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-InAppPurchase.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-InAppPurchase/Pods-SwiftUI-InAppPurchase.release.xcconfig"; sourceTree = "<group>"; };
+		F13841E12513DF1200088AE6 /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		F160B2B8251260CB0040FEE5 /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IAPManager.swift; path = "../../../../../Users/henryhavens/Downloads/SwiftUI-InAppPurchase-master/SwiftUI-InAppPurchase/IAPManager.swift"; sourceTree = "<group>"; };
 		F17E704524FD47110017710A /* SwiftUI-InAppPurchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-InAppPurchase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17E704824FD47120017710A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F17E704A24FD47120017710A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			children = (
 				F17E704824FD47120017710A /* AppDelegate.swift */,
 				F17E704A24FD47120017710A /* SceneDelegate.swift */,
+				F160B2B8251260CB0040FEE5 /* IAPManager.swift */,
 				F17E704F24FD47120017710A /* ContentView.swift */,
 				F17E705124FD47170017710A /* Assets.xcassets */,
 				F17E705624FD47170017710A /* LaunchScreen.storyboard */,
@@ -88,6 +93,7 @@
 				F17E704C24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld */,
 				F17E705324FD47170017710A /* Preview Content */,
 				F17E706224FD58DD0017710A /* Banner.swift */,
+				F13841E12513DF1200088AE6 /* BuyView.swift */,
 			);
 			path = "SwiftUI-InAppPurchase";
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F160B2B9251260CB0040FEE5 /* IAPManager.swift in Sources */,
+				F13841E22513DF1200088AE6 /* BuyView.swift in Sources */,
 				F17E704E24FD47120017710A /* SwiftUI_InAppPurchase.xcdatamodeld in Sources */,
 				F17E704924FD47120017710A /* AppDelegate.swift in Sources */,
 				F17E706324FD58DD0017710A /* Banner.swift in Sources */,
